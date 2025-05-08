@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- sweet alert -->
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <!--  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>CRUD OPERATION</title>
+    <link rel="icon" href="https://www.ideaimaji.com/blog/wp-content/uploads/2016/08/cropped-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    
+<div class="container">
+
+<nav>
+    <h1>Crud Application</h1>
+    <button id="addemployee">Add Employee</button>
+</nav>
+
+
+<div class="data_container">
+    <div class="table_data">
+    
+       <table>
+         <thead>
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th >Email Address</th>
+                <th>Date</th>
+                <th  colspan="2">Action</th>
+                <!-- <th id="head-last"></th> -->
+            </tr>
+         </thead>
+         <tbody>
+           
+<!--            
+            <tr>
+                <td>1</td>
+                <td>Anamika</td>
+                <td>Singh</td>
+                <td>Anamika@gmail.com</td>
+                <td>22</td>
+                <td id="last">
+                    <button id="edit">Edit</button>
+                    <button id="delete">Delete</button>
+                </td>
+            </tr> -->
+           
+            
+         </tbody>
+       </table>
+  </div>
+
+</div>
+
+
+</div>
+
+<div class="popup">
+<div class="user_detail_form">
+
+    <div class="form">
+
+        <div class="details">
+             <p>Employee Form</p>
+             <form>
+                <fieldset>
+                    <legend>FirstName</legend>
+                    <input type="text" id="firstName" required> 
+                </fieldset>
+               
+                <fieldset>
+                    <legend>lastName</legend>
+                    <input type="text" id="lastName"  required> 
+                </fieldset>
+
+                <fieldset>
+                    <legend>EmailAddress</legend>
+                    <input type="email" id="email"  required> 
+                </fieldset> 
+                
+                <fieldset >
+                        <legend>Date</legend>
+                        <input  type="date" id="date" >
+                </fieldset>
+               
+                <div class="user_button">
+                    <button class="cancel">Cancel</button>
+                    <button class="save ">Save</button>
+                </div>
+             </form>
+        </div>
+
+    </div>
+    
+</div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
